@@ -1,6 +1,6 @@
 # Simple JS + Sass Webpack Template
 
-Basic Webpack set up for a simple JavaScript and Sass Project. This is just a simple starter template for my own simple Vanilla JavaScript projects
+Basic Webpack set up for a simple JavaScript and Sass Project. This is just a simple starter template for my own simple Vanilla JavaScript and SASS projects.
 
 ## Installation
 
