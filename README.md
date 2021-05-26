@@ -21,7 +21,7 @@ npm start
 Build Project
 
 ```bash
-npm build
+npm run build
 ```
 
 ## License
