@@ -15,7 +15,7 @@ module.exports = merge(common, {
                 use: [
                     "style-loader", // 3. Injects Styles into DOM
                     "css-loader", // 2. Turns CSS into CommonJS
-                    // { // Optional Step
+                    // { // Optional for bootstrap
                     //     // Run postcss actions
                     //     loader: 'postcss-loader',
                     //     options: {
@@ -25,6 +25,7 @@ module.exports = merge(common, {
                     //         // postcss plugins, can be exported to postcss.config.js
                     //             plugins: function () {
                     //                 return [
+                    //                     require('precss'),
                     //                     require('autoprefixer')
                     //                 ];
                     //             }

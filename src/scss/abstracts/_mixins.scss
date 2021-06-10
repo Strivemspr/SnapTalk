@@ -1,0 +1,55 @@
+// Parameters
+
+// extra-small: 28.125em // 450px (optional)
+
+// small: 37.5em; // 600px
+// medium: 56.25em; // 900px
+// large: 75em; // 1200px
+// extra-large: 112.5em;// 1800px
+
+// Desktop first approach
+
+// 0 - 600px:       Phone
+// 600 - 900px:     Tablet Portrait
+// 900 - 1200px:    Tablet Landscape
+// [1200 - 1800px]  is where our normal styles apply
+// 1800px + :       Big Desktop
+
+@mixin desktop-first-media-query($breakpoint) {
+    @if $breakpoint == small {
+        @media (max-width: 37.5em) { @content }; // 600px
+    }
+
+    @if $breakpoint == medium {
+        @media (max-width: 56.25em) { @content }; // 900px
+    }
+
+    @if $breakpoint == large {
+        @media (max-width: 75em) { @content }; // 1200px
+    }
+
+    @if $breakpoint == extra-large {
+        @media (min-width: 112.5em) { @content }; // 1800px
+    }
+}
+
+@mixin custom-scrollbar {
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+      
+      /* Track */
+    &::-webkit-scrollbar-track {
+        background: var(--grey);
+    }
+      
+      /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: var(--secondary-light);
+    }
+      
+      /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: var(--grey-dark);
+    }
+}
