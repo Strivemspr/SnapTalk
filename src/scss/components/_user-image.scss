@@ -1,0 +1,60 @@
+.user-image {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1rem;
+    position: relative;
+    cursor: pointer;
+    transition: all .2s ease-in;
+
+    &:hover {
+        img {
+            transform: scale(1.1);   
+        }
+    }
+
+    img {
+        transition: inherit;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    &__container {
+        transition: inherit;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+    }
+
+    &.status {
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: var(--status-position);
+            right: var(--status-position);
+            height: var(--status-size);
+            width: var(--status-size);
+            border-radius: var(--border-radius-full-percentage);
+        }
+        
+        &.active {
+            &:after {
+                background-color: var(--color-status);
+            }
+        }
+
+        &.not-available {
+            --color-status: #E96565;
+            &:after {
+                background-color: var(--color-status);
+            }
+        }
+
+        &.away {
+            --color-status: #9A9A9A;
+            &:after {
+                background-color: var(--color-status);
+            }
+        }
+    }
+}

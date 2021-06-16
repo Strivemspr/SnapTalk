@@ -1,0 +1,69 @@
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius);
+    position: relative;
+    transition: all .3s ease-in;
+
+    // Sizes
+    &--large {
+        --notification-position: 6px;
+        height: var(--icon-size);
+        width: var(--icon-size);
+        &:hover {
+            background-color: var(--color-primary-dark);
+            color: var(--color-white-elements);
+        }
+    }
+    
+    &--small {
+        --icon-size: 3rem;
+        height: var(--icon-size);
+        width: var(--icon-size);
+        transition: all .3s ease-in;
+        color: var(--color-grey-dark);
+        &:hover {
+            color: var(--color-primary-dark);
+        }
+    }
+
+    // Colors
+    &--primary {
+        background-color: var(--color-primary);
+        color: var(--color-white-elements);
+    }
+
+    &--default {
+        background-color: var(--color-grey);
+        color: var(--color-grey-dark);
+    }
+
+    &--secondary {
+        background-color: var(--color-grey-dark);
+        color: var(--color-grey);
+    }
+
+    // Status
+    &.active {
+        background-color: var(--color-primary);
+        color: var(--color-white-elements);
+        &:hover {
+            background-color: var(--color-primary-dark);
+            color: var(--color-white-elements);
+        }
+    }
+
+    &.notification {
+        &:after {
+            content: "";
+            position: absolute;
+            top: var(--notification-position);
+            right: var(--notification-position);
+            border-radius: var(--border-radius-full-percentage);
+            background-color: var(--color-notification);
+            height: var(--notification-size);
+            width: var(--notification-size);
+        }
+    }
+}

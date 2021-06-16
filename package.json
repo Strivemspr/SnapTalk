@@ -1,7 +1,7 @@
 {
-  "name": "movie-app",
+  "name": "snaptalk",
   "version": "1.0.0",
-  "description": "movie-app using the movie DB api",
+  "description": "SnapTalk",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
@@ -30,7 +30,7 @@
     "build": "webpack --config webpack.prod.js"
   },
   "keywords": [
-    "movie",
+    "social-media",
     "app"
   ],
   "author": "Marlon P",

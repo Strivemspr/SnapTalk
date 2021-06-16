@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- +639516344712 -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack Template</title>
+    <title>SnapTalk</title>
 </head>
 <body class="preload">
-    <div>
-        <h1>Simple Javascript + Sass Webpack Template</h1>
-    </div>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <section class="header__inner">
+                <div class="header__logo">
+                    <img src="./images/Logo.svg" alt="Logo">
+                    <a href="#">
+                        <h1 class="header__title">SnapTalk</h1>
+                    </a>
+                </div>
+                
+                <nav class="header__nav">
+                    <a href="#" class="icon-container icon-container--default icon-container--large active">
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <a href="#" class="icon-container icon-container--default icon-container--large">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="#" class="icon-container icon-container--default icon-container--large notification">
+                        <i class="fas fa-book"></i>
+                    </a>
+                    <a href="#" class="icon-container icon-container--default icon-container--large notification">
+                        <i class="fas fa-location-arrow"></i>
+                    </a>
+                    <a href="#" class="icon-container icon-container--default icon-container--large notification">
+                        <i class="fas fa-users"></i>
+                    </a>
+                </nav>
+
+                <nav class="header__menu">
+                    <a href="#" class="icon-container icon-container--small">
+                        <i class="fas fa-comments"></i>
+                    </a>
+                    <a href="#" class="icon-container icon-container--small notification">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <div class="header__user">
+                        <div class="user-image status active">
+                            <div class="user-image__container">
+                                <img src="./images/user.png" alt="User">
+                            </div>
+                        </div>
+                        <h6>Lilia Perez</h6>
+                        <a href="#" class="icon-container icon-container--small icon-container--single">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </header>
+
+    <!-- REST OF CONTENT -->
+    <section class="content">
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar">
+
+        </aside>
+        
+        <!-- MAIN CONTENT - FEED -->
+        <main class="feed"></main>
+        
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-sidebar">
+
+        </aside>
+    </section>
 </body>
 </html>

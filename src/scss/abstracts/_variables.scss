@@ -1,19 +1,47 @@
 :root {
     //Colors
-    --color-primary: #CB134A;
-    --color-primary-light: #f11e5d;
-    --color-primary-dark: #b30f40;
-    --color-secondary: #303F58;
-    --color-secondary-light: #5C697E;
-    --color-secondary-dark: #182130;
+    --color-primary: #4C49E7;
+    --color-primary-light: #5856e6;
+    --color-primary-dark: #2d2ae2;
+
+    // Whites
     --color-white-text: #FFFFFF;
     --color-white-elements: #FFFFFF;
-    --color-grey: #b6b6b6;
-    --color-grey-dark: #7e7e7e;
+
+    // Blacks 
+    --color-black-text: #1E1E1E;
+    --color-black-elements: #1E1E1E;
+
+    // Notifications
+    --color-notification: #E96565;
+    --color-status: #36C644;
+
+    // Grey
+    --color-grey: #E8E8E8;
+    --color-grey-dark: #9A9A9A;
+    --color-grey-text: #9A9A9A;
+
+    // Shadow 
     --color-shadow: 0, 0, 0;
-    --color-shadow-opacity: 0.3;
+    --color-shadow-opacity: 0.1;
 
     // Sizes
     --header-height: 10rem;
     --icon-size: 4rem;
+    --container: 75em; // 1em = 16px 
+    --notification-size: 8px;
+    --notification-position: 2px;
+    --status-size: 12px;
+    --status-position: -3px;
+
+    // Utilities 
+    --border-radius: 10px;
+    --border-radius-full-percentage: 50%;
+    --border-radius-full-pixels: 9999;
+    
+    // Spacing Utilities
+    --small-space: 1.5rem;
+    --medium-space: 3rem;
+    --large-space: 6rem;
+    --extra-large-space: 10rem;
 }
