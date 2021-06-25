@@ -1,0 +1,39 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all .3s ease-in;
+    
+    .icon-container {
+        color: var(--color-white-text);
+        margin-right: var(--extra-small-space);
+    }
+
+    .text-primary {
+        color: var(--color-white-text);
+    }
+
+    // Primary 
+
+    &--primary {
+        background-color: var(--color-primary);
+    }
+    
+    &--secondary {
+        background-color: var(--color-grey-dark);
+    }
+
+    &:hover {
+        background-color: var(--color-primary-dark);
+    }
+
+    &:active {
+        transition: all .1s ease-in;
+        transform: translateY(-2px);
+    }
+}

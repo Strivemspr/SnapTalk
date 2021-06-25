@@ -1,0 +1,61 @@
+.feed-post {
+    background-color: var(--color-grey);
+    margin-top: var(--medium-space);
+    padding: var(--padding-small);
+    border-radius: var(--border-radius);
+
+    // HEADER
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__user-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__interactions {
+        display: flex;
+        margin-left: auto;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+        }
+    }
+
+    // ARTICLE
+    &__text {
+        margin: var(--small-space) 0;
+    }   
+
+    &__image {
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        height: 40rem;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    // BUTTONS
+    &__buttons {
+        display: flex;
+        margin-top: var(--small-space);
+
+        .btn:first-child {
+            margin-right: var(--extra-small-space);
+        }
+
+        .btn:last-child {
+            margin-left: auto;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.input {
+    padding: 1rem;
+    outline: none;
+    flex: 1;
+    margin-right: var(--extra-small-space);
+    border: none;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    transition: all .2s ease-in;
+    background-color: var(--color-white-elements);
+    color: var(--color-black-text);
+
+    &::placeholder {
+        color: var(--color-grey-text);
+    }
+
+    &:focus {
+        color: var(--color-black-text);
+    }
+
+    // Colors 
+    &--dark {
+        background-color: var(--color-grey);
+    }
+    
+    &:focus {
+        box-shadow: 0 0 0 1px var(--color-primary-light);
+        outline: none;
+    }
+}

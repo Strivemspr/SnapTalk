@@ -1,0 +1,10 @@
+.contacts-search {
+    display: flex;
+    // position: sticky;
+    // bottom: 0;
+    // right: 0;
+
+    .icon-container:not(:last-of-type) {
+        margin-right: var(--extra-small-space);
+    }
+}

@@ -1,10 +1,15 @@
 .header {
     background-color: var(--color-white-elements);
+    color: var(--color-black-text);
     height: var(--header-height);
     box-shadow: 0 4px 10px 0px rgba(var(--color-shadow), var(--color-shadow-opacity));
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    left: 0;
 
     .header__inner {
         display: flex;
@@ -16,11 +21,15 @@
     &__logo {
         display: flex;
         align-items: center;
+        
+        svg {
+            & > :first-child {
+                fill: var(--color-primary);
+            }
+        }
 
         h1 {
-            font-size: 2.5rem;
             margin-left: 1rem;
-            color: var(--color-black-elements);
         }
     }
 

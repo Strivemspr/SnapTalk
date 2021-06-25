@@ -35,21 +35,23 @@
 
 @mixin custom-scrollbar {
     &::-webkit-scrollbar {
-        width: 7px;
+        width: 5px;
     }
       
       /* Track */
     &::-webkit-scrollbar-track {
-        background: var(--grey);
+        background: var(--color-grey);
     }
       
       /* Handle */
     &::-webkit-scrollbar-thumb {
-        background: var(--secondary-light);
-    }
-      
-      /* Handle on hover */
-    &::-webkit-scrollbar-thumb:hover {
-        background: var(--grey-dark);
+        background: var(--color-grey-dark);
+        border-radius: 3px;
+
+        /* Handle on hover */
+        &:hover {
+            transition: all .3s ease-in;
+            background: var(--color-primary-light);
+        }
     }
 }

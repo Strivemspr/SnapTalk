@@ -1,0 +1,137 @@
+@use '../abstracts/mixins';
+
+.slider {
+    width: 100%;
+
+    // &__track {
+
+    // }
+
+    // &__list {
+
+    // }
+
+    &__slide {
+        height: 22rem;
+        overflow: hidden;
+        position: relative;
+        border-radius: var(--border-radius);
+        z-index: -10;
+        cursor: pointer;
+
+        @include mixins.desktop-first-media-query(small) {
+            // width: 8rem !important;
+            // height: 8rem;
+        }
+        
+        &:hover {
+            & > img {
+                transform: scale(1.1);
+            }
+
+            &.active {
+                border-color: var(--color-primary-dark);
+            }
+
+            &:after {
+                background-color: rgba(var(--color-shadow), .1);
+            }
+        }
+
+        &:after {
+            transition: background-color .3s ease-in;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(var(--color-shadow), .4);
+        }
+
+        img {
+            transition: transform .3s ease-in;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        &.active {
+            transition: border-color .3s ease-in;
+            border: 3px solid var(--color-primary);
+        }
+    }
+
+    &__arrow {
+        background-color: transparent;
+        fill: var(--color-grey-dark);
+        transition: all .3s ease-in;
+
+        @include mixins.desktop-first-media-query(small) {
+            display: none;
+        }
+
+        &--prev {
+            left: -30px;
+
+            @media screen and (max-width: 1000px) {
+                left: -25px;
+            }
+        }
+
+        &--next {
+            right: -30px;
+
+            @media screen and (max-width: 1000px) {
+                right: -25px;
+            }
+        }
+
+        svg {
+            width: 1.5em;
+            height: 1.5em;
+        }
+    }
+
+
+
+    &__user {
+        position: absolute;
+        top: calc(22rem - 40%);
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .icon-container, .image {
+            margin: 0 0 .8rem 0;
+        }
+
+        span {
+            color: var(--color-white-text);
+        }
+
+        @include mixins.desktop-first-media-query(small) {
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            span {
+                display: none;
+            }
+
+            .image {
+                display: none;
+            }
+
+            .icon-container, .image {
+                margin: 0;
+            }
+        }
+    }
+}

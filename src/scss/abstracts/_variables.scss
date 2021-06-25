@@ -33,15 +33,51 @@
     --notification-position: 2px;
     --status-size: 12px;
     --status-position: -3px;
-
+    --content-size: 3rem;
+    --sidebar-width: 300px;
+    --slider-item-height: 250px;
+    
     // Utilities 
     --border-radius: 10px;
     --border-radius-full-percentage: 50%;
     --border-radius-full-pixels: 9999;
-    
+
     // Spacing Utilities
+    --extra-small-space: 1rem;
     --small-space: 1.5rem;
+    --small-plus-space: 2rem;
     --medium-space: 3rem;
     --large-space: 6rem;
     --extra-large-space: 10rem;
+
+    --padding-small: 1.5rem;
+    --padding-small-plus: 2rem;
+    --padding-medium: 3rem;
+    --padding-large: 6rem;
+    --padding-extra-large: 10rem;
 }
+
+.dark-mode {
+    //Colors
+    --color-primary: #e7c249;
+    --color-primary-light: #fad96e;
+    --color-primary-dark: #dfb62f;
+
+    // Whites
+    --color-white-text: #FFFFFF;
+    --color-white-elements: #383535;
+
+    // Blacks 
+    --color-black-text: #FFFFFF;
+    --color-black-elements: #1E1E1E;
+
+    // Notifications
+    --color-notification: #E96565;
+    --color-status: #36C644;
+
+    // Grey
+    --color-grey: #555555;
+    --color-grey-dark: #9A9A9A;
+    --color-grey-text: #FFFFFF;
+}
+

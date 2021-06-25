@@ -1,0 +1,55 @@
+.badge {
+    width: 4rem;
+    height: 2.3rem;
+    background-color: var(--color-grey);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: var(--border-radius);
+    padding: 0 1rem;
+    transition: all .3s ease-in; 
+
+    &:hover {
+        color: var(--color-white-text);
+        background-color: var(--color-primary-dark);
+
+        span {
+            color: var(--color-white-text);
+        }
+    }
+
+    span {
+        transition: all .3s ease-in;
+        display: inline-block;
+        font-size: 1;
+        font-weight: bold;
+        color: var(--color-grey-text);
+    }
+
+    // Sizes
+    &--large {
+        height: 4rem;
+    }
+
+    // Colors
+    &--dark {
+        background-color: var(--color-grey-dark);
+        span {
+            color: var(--color-white-text);
+        }
+    }
+
+    &.today {
+        background-color: var(--color-primary);
+        
+        span {
+            color: var(--color-white-text);
+        }
+
+        &:hover {
+            background-color: var(--color-primary-dark);
+        }
+    }
+}

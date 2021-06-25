@@ -1,0 +1,53 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: var(--small-space);
+
+    &:hover {
+        .text-secondary {
+            color: var(--color-primary-dark);
+        }
+        
+        .badge {
+            background-color: var(--color-primary-dark);
+            color: var(--color-white-text);
+        }
+
+        img {
+            transform: scale(1.1);   
+        }
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+
+    &__status {
+        display: flex;
+        align-items: center;
+    }
+
+    &__online {
+        height: 10px;
+        width: 10px;
+        background-color: var(--color-status);
+        border-radius: 50%;
+        margin-right: var(--small-space);
+    }
+
+    &__online-ago {
+        margin-right: var(--small-space);
+    }
+
+    .text-secondary {
+        transition: all .3s ease-in;
+    }
+    
+    .badge {
+        // transition: all .3s ease-in;
+        color: var(--color-grey-text);
+    }
+}

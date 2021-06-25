@@ -1,9 +1,9 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-// Files
+// Abstracts
 @import './abstracts/variables';
-
+@import './abstracts/typography';
 
 // Base
 @import './base/base';
@@ -11,10 +11,33 @@
 
 // Components
 
-@import './components/header';
 @import './components/icon-container';
-@import './components/user-image';
+@import './components/image-container';
+@import './components/search';
+@import './components/input';
+@import './components/badge';
+@import './components/nav-menu';
+@import './components/nav-favorites';
+@import './components/nav-events';
+@import './components/group';
+@import './components/group-image';
+@import './components/contacts';
+@import './components/single-contact';
+@import './components/contacts-search';
+@import './components/slider'; 
+@import './components/toPost'; 
+@import './components/button'; 
+@import './components/feed'; 
+@import './components/theme'; 
 
+// Layout
+@import './layout/content';
+@import './layout/header';
+@import './layout/footer';
+
+// Vendor
+
+@import '../../node_modules/@splidejs/splide/dist/css/splide.min.css'
 
 
 

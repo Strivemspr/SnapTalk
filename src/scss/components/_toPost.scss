@@ -1,0 +1,16 @@
+.toPost {
+    background-color: var(--color-grey);
+    display: flex;
+    align-items: center;
+    margin-top: var(--medium-space);
+    border-radius: var(--border-radius);
+    padding: var(--padding-small);
+
+    .btn {
+        margin-right: 1rem;
+    }
+
+    .input {
+        height: 4rem;
+    }
+}

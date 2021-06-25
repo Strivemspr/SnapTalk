@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: './src/js/controller.js',
+        main: './src/js/Controller.js',
         vendor: './src/js/vendor/vendor.js',
     },
     plugins: [
@@ -16,10 +16,6 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.(png|jpe?g|gif|svg)$/i, // -> /\.png/, // -> /\.(png|jpe?g|svg|)$/ // Change Assets Extension
-                type: 'asset/resource'
-            },
             {
                 test: /\.html$/i,
                 loader: 'html-loader',
@@ -41,9 +37,18 @@ module.exports = {
                                 attribute: 'src',
                                 type: 'src',
                             },
+                            {
+                                tag: 'img',
+                                attribute: 'data-splide-lazy',
+                                type: 'src',
+                            },
                         ],
                     },
                 },
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i, // -> /\.png/, // -> /\.(png|jpe?g|svg|)$/ // Change Assets Extension
+                type: 'asset/resource',
             },
         ],
     },

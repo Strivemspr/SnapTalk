@@ -15,37 +15,17 @@ module.exports = merge(common, {
                 use: [
                     "style-loader", // 3. Injects Styles into DOM
                     "css-loader", // 2. Turns CSS into CommonJS
-                    // { // Optional for bootstrap
-                    //     // Run postcss actions
-                    //     loader: 'postcss-loader',
-                    //     options: {
-                    //         // `postcssOptions` is needed for postcss 8.x;
-                    //         // if you use postcss 7.x skip the key
-                    //         postcssOptions: {
-                    //         // postcss plugins, can be exported to postcss.config.js
-                    //             plugins: function () {
-                    //                 return [
-                    //                     require('precss'),
-                    //                     require('autoprefixer')
-                    //                 ];
-                    //             }
-                    //         }
-                    //     }
-                    // },
                     "sass-loader", // 1. Turns Sass to CSS
                 ],
             },
         ]
     },
     devServer: {
-        // hot: true,
-        // hotOnly: true,
-        // index: './src/index.html',
+        host: '192.168.1.76',
         liveReload: true,
-        host: '0.0.0.0',
         open: true,
-        openPage: 'http://localhost:8080',
         disableHostCheck: true,
         watchContentBase: true,
+        port: 8080,
     },
 });

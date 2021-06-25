@@ -10,16 +10,16 @@ html {
     font-size: 62.5%; // 1rem = 10px 10px/16px = 62.5%; convert back -> 0.625 * 16 = 10 
   
     @include mixins.desktop-first-media-query(large) { // width < 1200px? 
-        font-size: 56.25%; // 1rem = 9px, 9/16px = 56.25%;
+        font-size: 60%; // 1rem = 9px, 9/16px = 56.25%;
     }
 
-    @include mixins.desktop-first-media-query(medium) { // width < 900px?
-        font-size: 50%; // 1rem = 8px, 8/16px = 50%; 
-    }
+    // @include mixins.desktop-first-media-query(medium) { // width < 900px?
+    //     font-size: 50%; // 1rem = 8px, 8/16px = 50%; 
+    // }
 
-    @include mixins.desktop-first-media-query(small) { // width < 600px?
-        font-size: 37.5%; // 1rem = 6px, 6/16px = 37.5%; 
-    }
+    // @include mixins.desktop-first-media-query(small) { // width < 600px?
+    //     font-size: 37.5%; // 1rem = 6px, 6/16px = 37.5%; 
+    // }
     
     @include mixins.desktop-first-media-query(extra-large) {
         font-size: 75%; // 1rem = 12px, 12/16px = 75%; [0.75 * 16] convert back
@@ -66,13 +66,18 @@ h3 {
 
 ::selection {
     background-color: var(--color-primary);
-    color: var(--color-white-elements);
+    color: var(--color-white-text);
 }
 
 .container {
-    max-width: var(--container);
-    width: 98%;
+    // max-width: var(--container);
+    width: 100%;
     margin: auto;
+    padding: 0 3rem;
+
+    @include mixins.desktop-first-media-query(small) {
+        padding: 0 .5rem;
+    }
 }
 
 // PRELOAD 

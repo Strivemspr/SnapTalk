@@ -1,0 +1,11 @@
+.group {
+    margin-bottom: var(--small-plus-space);
+
+    &__title {
+        margin-bottom: var(--small-space);
+    }
+
+    .group-image:not(:last-child) {
+        margin-bottom: var(--small-space);
+    }
+}
