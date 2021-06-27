@@ -1,5 +1,20 @@
 .nav-favorites {
     padding: var(--padding-small-plus) var(--padding-small-plus) 0 var(--padding-small-plus);
+    transition: all .3s ease-in;
+
+    &.active {
+        .nav-favorites__items {
+            height: auto;
+            max-height: 500px;
+            visibility: visible;
+        }
+
+        .nav-favorites__title {
+            .icon-container {
+                transform: rotate(180deg);
+            }
+        }
+    }
 
     &__title {
         display: flex;
@@ -8,11 +23,12 @@
     }
 
     &__items {
-//      --small-space: 0;
+        transition: all .3s ease-in;
         margin-top: var(--small-space);
-//      height: 0;
-//      visibility: hidden;
-//      overflow: hidden;
+        height: auto;
+        max-height: 0;
+        visibility: hidden;
+        overflow: hidden;
     }
 
     &__item {

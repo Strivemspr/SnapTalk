@@ -7,4 +7,8 @@
     .icon-container:not(:last-of-type) {
         margin-right: var(--extra-small-space);
     }
+
+    .input {
+        width: 100%;
+    }
 }

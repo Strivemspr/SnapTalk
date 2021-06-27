@@ -42,6 +42,9 @@
     --border-radius-full-percentage: 50%;
     --border-radius-full-pixels: 9999;
 
+    // Animations 
+    --on-load-animation-speed: .5s;
+
     // Spacing Utilities
     --extra-small-space: 1rem;
     --small-space: 1.5rem;
@@ -59,9 +62,12 @@
 
 .dark-mode {
     //Colors
-    --color-primary: #e7c249;
-    --color-primary-light: #fad96e;
-    --color-primary-dark: #dfb62f;
+    --color-primary: #0ebb96;
+    --color-primary-light: #12c59e;
+    --color-primary-dark: #0bad8a;
+    // --color-primary: #e7c249;
+    // --color-primary-light: #fad96e;
+    // --color-primary-dark: #dfb62f;
 
     // Whites
     --color-white-text: #FFFFFF;

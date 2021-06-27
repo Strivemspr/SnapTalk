@@ -1,3 +1,5 @@
+@use '../abstracts/mixins';
+
 .feed-post {
     background-color: var(--color-grey);
     margin-top: var(--medium-space);
@@ -24,6 +26,10 @@
             display: flex;
             align-items: center;
             margin-right: 1rem;
+
+            @include mixins.desktop-first-media-query(small) {
+                margin-right: .5rem;
+            }
         }
     }
 

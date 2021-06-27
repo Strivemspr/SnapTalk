@@ -16,11 +16,13 @@
         <i class="far fa-moon"></i>
     </div>
 
+    <div class="modal"></div>
+
     <!-- HEADER -->
     <header class="header">
         <div class="container">
             <section class="header__inner">
-                <div class="header__logo">
+                <div class="header__logo animated-on-load to-right">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M28 56C43.464 56 56 43.464 56 28C56 12.536 43.464 0 28 0C12.536 0 0 12.536 0 28C0 43.464 12.536 56 28 56Z" fill="#4C49E7"/>
                         <path d="M18.8695 24.9565C22.5674 24.9565 25.5652 21.9587 25.5652 18.2608C25.5652 14.5629 22.5674 11.5652 18.8695 11.5652C15.1716 11.5652 12.1739 14.5629 12.1739 18.2608C12.1739 21.9587 15.1716 24.9565 18.8695 24.9565Z" fill="#F9F2F2"/>
@@ -31,7 +33,7 @@
                     </a>
                 </div>
                 
-                <nav class="header__nav">
+                <nav class="header__nav animated-on-load to-bottom">
                     <a href="#" class="icon-container icon-container--default icon-container--large active">
                         <i class="fas fa-home"></i>
                     </a>
@@ -47,9 +49,12 @@
                     <a href="#" class="icon-container icon-container--default icon-container--large notification">
                         <i class="fas fa-users"></i>
                     </a>
+                    <a href="#" class="icon-menu icon-container icon-container--default icon-container--large">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </a>
                 </nav>
 
-                <nav class="header__menu">
+                <nav class="header__menu animated-on-load to-left">
                     <a href="#" class="icon-container icon-container--small">
                         <i class="fas fa-comments"></i>
                     </a>
@@ -75,7 +80,7 @@
     <!-- REST OF CONTENT -->
     <section class="content">
         <!-- LEFT SIDEBAR -->
-        <aside class="left-sidebar">
+        <aside class="left-sidebar animated-on-load to-right">
             <section class="left-sidebar__user-menu">
 
                 <!-- SEARCH -->
@@ -158,10 +163,10 @@
 
             <!-- FAVORITES -->
             <section class="left-sidebar__user-favorites">
-                <nav class="nav-favorites">
+                <nav class="nav-favorites active">
                     <div class="nav-favorites__title">
                         <h2 class="heading-secondary">Favourites</h2>
-                        <div href="#" class="icon-container icon-container--small">
+                        <div href="#" class="icon-favorites icon-container icon-container--small">
                             <i class="fas fa-chevron-down"></i> 
                         </div>
                     </div>
@@ -252,10 +257,10 @@
             
             <!-- EVENTS -->
             <section class="left-sidebar__user-events">
-                <nav class="nav-events">
+                <nav class="nav-events active">
                     <div class="nav-events__title">
                         <h2 class="heading-secondary">Upcoming Events</h2>
-                        <div href="#" class="icon-container icon-container--small">
+                        <div href="#" class="icon-events icon-container icon-container--small">
                             <i class="fas fa-chevron-down"></i> 
                         </div>
                     </div>
@@ -442,7 +447,7 @@
             </section>
 
             <!-- POST YOUR THOUGHTS -->
-            <section class="toPost">
+            <section class="toPost animated-on-load to-bottom">
                 <div class="image">
                     <div class="image__container image__container--large">
                         <img src="./images/user.png" alt="User">
@@ -467,7 +472,7 @@
             </section>
 
             <!-- FEED -->
-            <section class="feed-post">
+            <section class="feed-post animated-on-load to-bottom">
                 <!-- POST HEADER -->
                 <header class="feed-post__header">
                     <!-- image -->
@@ -542,7 +547,7 @@
                 </footer>
             </section>
 
-            <section class="feed-post">
+            <section class="feed-post animated-on-load to-bottom">
                 <!-- POST HEADER -->
                 <header class="feed-post__header">
                     <!-- image -->
@@ -617,10 +622,85 @@
                     </button>
                 </footer>
             </section>
+
+            <section class="feed-post animated-on-load to-bottom">
+                <!-- POST HEADER -->
+                <header class="feed-post__header">
+                    <!-- image -->
+                    <div class="image">
+                        <div class="image__container">
+                            <img src="./images/user-08.png" alt="User">
+                        </div>
+                    </div>
+                    <!-- user info -->
+                    <div class="feed-post__user-info">
+                        <span class="text-primary">Saria Holmes</span>
+                        <small class="text-tertiary">4 hours ago</small>
+                    </div>
+                    <!-- user interactions -->
+                    <div class="feed-post__interactions">
+                        <div class="feed-post__interactions-item feed-post__likes">
+                            <div class="icon-container icon-container--small">
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
+                            <span class="text-primary">176</span>
+                        </div>
+                        <div class="feed-post__interactions-item feed-post__shares">
+                            <div class="icon-container icon-container--small">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <span class="text-primary">102</span>
+                        </div>
+                        <div class="feed-post__interactions-item feed-post__comments">
+                            <div class="icon-container icon-container--small">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <span class="text-primary">158</span>
+                        </div>
+                    </div>
+                    <!-- options -->
+                    <div class="feed-post__options">
+                        <div class="icon-container icon-container--small">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                </header>
+                <!-- POST ARTICLE -->
+                <article class="feed-post__article">
+                    <p class="feed-post__text text-secondary">Today I created this amazing design that I know you will love, please check it out and tell me if you like it.</p>
+                    <div class="feed-post__image">
+                        <img src="./images/design.png" alt="post-image">
+                    </div>
+                </article>
+                <!-- BUTTONS -->
+                <footer class="feed-post__buttons">
+                    <!-- thumbs up button -->
+                    <button class="btn btn--primary">
+                        <div class="icon-container">
+                            <i class="fas fa-thumbs-up"></i>
+                        </div>
+                        <span class="text-primary">Like</span>
+                    </button>
+                    <!-- share button -->
+                    <button class="btn btn--primary">
+                        <div class="icon-container">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <span class="text-primary">Share</span>
+                    </button>
+                    <!-- comment button -->
+                    <button class="btn btn--secondary">
+                        <div class="icon-container">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <span class="text-primary">Comment</span>
+                    </button>
+                </footer>
+            </section>
         </main>
         
         <!-- RIGHT SIDEBAR -->
-        <aside class="right-sidebar">
+        <aside class="right-sidebar animated-on-load to-left">
             <!-- JOINT A GROUP -->
             <div class="group">
                 <div class="group__title">

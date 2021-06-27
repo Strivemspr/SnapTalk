@@ -31,6 +31,7 @@ body {
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
     font-size: 1.6rem;
+    background-color: var(--color-white-elements);
 }
   
 ol, ul {
@@ -78,6 +79,13 @@ h3 {
     @include mixins.desktop-first-media-query(small) {
         padding: 0 .5rem;
     }
+}
+
+// ANIMATIONS
+
+.resize-transition-stopper * {
+    // animation: none !important;
+    transition: none !important; // only remove transitions
 }
 
 // PRELOAD 

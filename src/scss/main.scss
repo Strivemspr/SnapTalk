@@ -10,7 +10,6 @@
 @import './base/animations';
 
 // Components
-
 @import './components/icon-container';
 @import './components/image-container';
 @import './components/search';
@@ -29,6 +28,7 @@
 @import './components/button'; 
 @import './components/feed'; 
 @import './components/theme'; 
+@import './components/modal'; 
 
 // Layout
 @import './layout/content';
@@ -36,12 +36,4 @@
 @import './layout/footer';
 
 // Vendor
-
-@import '../../node_modules/@splidejs/splide/dist/css/splide.min.css'
-
-
-
-
-
-
-
+@import '../../node_modules/@splidejs/splide/dist/css/splide.min.css';
