@@ -10,11 +10,11 @@ import Splide from '@splidejs/splide';
 new Splide( '.splide', {
     type: 'slide',
 	perPage: 5,
-    // speed: 300,
-    // easing: 'ease-in',
-    drag: true,
     perMove: 1,
     gap: '15px',
+    drag: true,
+    pauseOnHover: true,
+    focus: false,
     pagination: false,
     lazyLoad: 'sequential',
     classes: {
@@ -28,9 +28,10 @@ new Splide( '.splide', {
 			perPage: 4,
 		},
         600: {
-            perPage: 5,
+            gap: '10px',
+            perPage: 1,
+            height: '8rem',
             fixedWidth: '8rem',
-            fixedHeight: '8rem',
         }
 	}
 }).mount();

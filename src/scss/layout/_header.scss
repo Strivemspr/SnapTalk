@@ -51,6 +51,14 @@
                 margin-right: var(--small-space);
             }
 
+            &:nth-last-child(2) {
+                display: inline-flex;                
+                
+                @include mixins.desktop-first-media-query(small) {
+                    display: none;
+                }
+            }
+
             &:last-child {
                 display: none;
 
